@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B1000001238F0001 /* IceSafeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000002238F0001 /* IceSafeApp.swift */; };
+		B1000001238F0001 /* IceSafeForFishermansApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000002238F0001 /* IceSafeForFishermansApp.swift */; };
 		B1000003238F0001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000004238F0001 /* ContentView.swift */; };
 		B1000005238F0001 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000006238F0001 /* AppTheme.swift */; };
 		B1000007238F0001 /* IceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000008238F0001 /* IceType.swift */; };
@@ -33,7 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B1000002238F0001 /* IceSafeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceSafeApp.swift; sourceTree = "<group>"; };
+		B1000002238F0001 /* IceSafeForFishermansApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceSafeForFishermansApp.swift; sourceTree = "<group>"; };
 		B1000004238F0001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B1000006238F0001 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		B1000008238F0001 /* IceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceType.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		B100002A238F0001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B100002C238F0001 /* DisclaimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerView.swift; sourceTree = "<group>"; };
 		B100002E238F0001 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
-		B1000030238F0001 /* IceSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1000030238F0001 /* IceSafeForFishermans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceSafeForFishermans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,15 +73,15 @@
 		B1000031238F0001 = {
 			isa = PBXGroup;
 			children = (
-				B1000032238F0001 /* IceSafe */,
+				B1000032238F0001 /* IceSafeForFishermans */,
 				B1000033238F0001 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B1000032238F0001 /* IceSafe */ = {
+		B1000032238F0001 /* IceSafeForFishermans */ = {
 			isa = PBXGroup;
 			children = (
-				B1000002238F0001 /* IceSafeApp.swift */,
+				B1000002238F0001 /* IceSafeForFishermansApp.swift */,
 				B1000004238F0001 /* ContentView.swift */,
 				B1000034238F0001 /* Models */,
 				B1000035238F0001 /* ViewModels */,
@@ -90,13 +90,13 @@
 				B1000038238F0001 /* Utils */,
 				B100002A238F0001 /* Assets.xcassets */,
 			);
-			path = IceSafe;
+			path = IceSafeForFishermans;
 			sourceTree = "<group>";
 		};
 		B1000033238F0001 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B1000030238F0001 /* IceSafe.app */,
+				B1000030238F0001 /* IceSafeForFishermans.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,9 +207,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B1000040238F0001 /* IceSafe */ = {
+		B1000040238F0001 /* IceSafeForFishermans */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B1000041238F0001 /* Build configuration list for PBXNativeTarget "IceSafe" */;
+			buildConfigurationList = B1000041238F0001 /* Build configuration list for PBXNativeTarget "IceSafeForFishermans" */;
 			buildPhases = (
 				B1000042238F0001 /* Sources */,
 				B100002F238F0001 /* Frameworks */,
@@ -219,9 +219,9 @@
 			);
 			dependencies = (
 			);
-			name = IceSafe;
-			productName = IceSafe;
-			productReference = B1000030238F0001 /* IceSafe.app */;
+			name = IceSafeForFishermans;
+			productName = IceSafeForFishermans;
+			productReference = B1000030238F0001 /* IceSafeForFishermans.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -239,7 +239,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B1000045238F0001 /* Build configuration list for PBXProject "IceSafe" */;
+			buildConfigurationList = B1000045238F0001 /* Build configuration list for PBXProject "IceSafeForFishermans" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = "en-GB";
 			hasScannedForEncodings = 0;
@@ -252,7 +252,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B1000040238F0001 /* IceSafe */,
+				B1000040238F0001 /* IceSafeForFishermans */,
 			);
 		};
 /* End PBXProject section */
@@ -273,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1000001238F0001 /* IceSafeApp.swift in Sources */,
+				B1000001238F0001 /* IceSafeForFishermansApp.swift in Sources */,
 				B1000003238F0001 /* ContentView.swift in Sources */,
 				B1000005238F0001 /* AppTheme.swift in Sources */,
 				B1000007238F0001 /* IceType.swift in Sources */,
@@ -430,8 +430,8 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = IceSafe/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "IceSafe";
+				INFOPLIST_FILE = IceSafeForFishermans/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "IceSafeForFishermans";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,8 +464,8 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = IceSafe/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "IceSafe";
+				INFOPLIST_FILE = IceSafeForFishermans/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "IceSafeForFishermans";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -491,7 +491,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B1000045238F0001 /* Build configuration list for PBXProject "IceSafe" */ = {
+		B1000045238F0001 /* Build configuration list for PBXProject "IceSafeForFishermans" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B1000046238F0001 /* Debug */,
@@ -500,7 +500,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B1000041238F0001 /* Build configuration list for PBXNativeTarget "IceSafe" */ = {
+		B1000041238F0001 /* Build configuration list for PBXNativeTarget "IceSafeForFishermans" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B1000048238F0001 /* Debug */,

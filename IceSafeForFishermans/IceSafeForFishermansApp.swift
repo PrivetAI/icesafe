@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct IceSafeApp: App {
+struct IceSafeForFishermansApp: App {
     @State private var hasAcceptedDisclaimer = UserDefaults.standard.bool(forKey: "hasAcceptedDisclaimer")
     
     var body: some Scene {
