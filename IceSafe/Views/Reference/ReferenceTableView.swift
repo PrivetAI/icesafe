@@ -209,7 +209,7 @@ struct ReferenceTableView: View {
                     
                     Spacer()
                     
-                    Image(systemName: expandedRiskFactor == factor.title ? "chevron.up" : "chevron.down")
+                    Text(expandedRiskFactor == factor.title ? "▲" : "▼")
                         .font(.caption)
                         .foregroundColor(AppTheme.textMuted)
                 }

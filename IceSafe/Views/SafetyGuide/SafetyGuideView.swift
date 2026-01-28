@@ -95,7 +95,7 @@ struct SafetyGuideView: View {
                         
                         Spacer()
                         
-                        Image(systemName: expandedSection == title ? "chevron.up" : "chevron.down")
+                        Text(expandedSection == title ? "▲" : "▼")
                             .foregroundColor(AppTheme.textMuted)
                     }
                     .padding(AppTheme.paddingMedium)

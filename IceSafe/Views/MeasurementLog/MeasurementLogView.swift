@@ -260,13 +260,25 @@ struct AddMeasurementSheet: View {
                                     .font(.headline)
                                     .foregroundColor(AppTheme.textPrimary)
                                 
-                                TextField("Add notes about conditions...", text: $notes, axis: .vertical)
-                                    .lineLimit(3...6)
-                                    .font(.body)
-                                    .foregroundColor(AppTheme.textPrimary)
-                                    .padding()
-                                    .background(AppTheme.cardBackgroundLight)
-                                    .cornerRadius(AppTheme.cornerRadiusSmall)
+                                ZStack(alignment: .topLeading) {
+                                    if notes.isEmpty {
+                                        Text("Add notes about conditions...")
+                                            .font(.body)
+                                            .foregroundColor(AppTheme.textMuted)
+                                            .padding(.horizontal, 8)
+                                            .padding(.vertical, 12)
+                                    }
+                                    
+                                    TextEditor(text: $notes)
+                                        .font(.body)
+                                        .foregroundColor(AppTheme.textPrimary)
+                                        .frame(minHeight: 80)
+
+                                        .background(Color.clear)
+                                }
+                                .padding(4)
+                                .background(AppTheme.cardBackgroundLight)
+                                .cornerRadius(AppTheme.cornerRadiusSmall)
                             }
                         }
                         
@@ -394,13 +406,25 @@ struct EditMeasurementSheet: View {
                                     .font(.headline)
                                     .foregroundColor(AppTheme.textPrimary)
                                 
-                                TextField("Add notes about conditions...", text: $notes, axis: .vertical)
-                                    .lineLimit(3...6)
-                                    .font(.body)
-                                    .foregroundColor(AppTheme.textPrimary)
-                                    .padding()
-                                    .background(AppTheme.cardBackgroundLight)
-                                    .cornerRadius(AppTheme.cornerRadiusSmall)
+                                ZStack(alignment: .topLeading) {
+                                    if notes.isEmpty {
+                                        Text("Add notes about conditions...")
+                                            .font(.body)
+                                            .foregroundColor(AppTheme.textMuted)
+                                            .padding(.horizontal, 8)
+                                            .padding(.vertical, 12)
+                                    }
+                                    
+                                    TextEditor(text: $notes)
+                                        .font(.body)
+                                        .foregroundColor(AppTheme.textPrimary)
+                                        .frame(minHeight: 80)
+
+                                        .background(Color.clear)
+                                }
+                                .padding(4)
+                                .background(AppTheme.cardBackgroundLight)
+                                .cornerRadius(AppTheme.cornerRadiusSmall)
                             }
                         }
                         
