@@ -213,26 +213,45 @@ struct FormationIconShape: Shape {
         let w = rect.width
         let h = rect.height
         
-        // Snowflake
+        // Snowflake with filled center
         let center = CGPoint(x: w * 0.5, y: h * 0.5)
         let radius = min(w, h) * 0.4
         
+        // Center hexagon
         for i in 0..<6 {
             let angle = CGFloat(i) * .pi / 3
+            let point = CGPoint(x: center.x + cos(angle) * radius * 0.2, y: center.y + sin(angle) * radius * 0.2)
+            if i == 0 {
+                path.move(to: point)
+            } else {
+                path.addLine(to: point)
+            }
+        }
+        path.closeSubpath()
+        
+        // Main rays
+        for i in 0..<6 {
+            let angle = CGFloat(i) * .pi / 3
+            let startPoint = CGPoint(x: center.x + cos(angle) * radius * 0.2, y: center.y + sin(angle) * radius * 0.2)
             let endPoint = CGPoint(x: center.x + cos(angle) * radius, y: center.y + sin(angle) * radius)
-            path.move(to: center)
+            
+            // Main ray line
+            path.move(to: startPoint)
             path.addLine(to: endPoint)
             
-            // Small branches
+            // Small branches at 60% distance
             let branchStart = CGPoint(x: center.x + cos(angle) * radius * 0.6, y: center.y + sin(angle) * radius * 0.6)
             let branchAngle1 = angle + .pi / 6
             let branchAngle2 = angle - .pi / 6
-            let branchLength = radius * 0.25
+            let branchLength = radius * 0.2
             
             path.move(to: branchStart)
             path.addLine(to: CGPoint(x: branchStart.x + cos(branchAngle1) * branchLength, y: branchStart.y + sin(branchAngle1) * branchLength))
             path.move(to: branchStart)
             path.addLine(to: CGPoint(x: branchStart.x + cos(branchAngle2) * branchLength, y: branchStart.y + sin(branchAngle2) * branchLength))
+            
+            // Tip decorations
+            path.addEllipse(in: CGRect(x: endPoint.x - w * 0.04, y: endPoint.y - h * 0.04, width: w * 0.08, height: h * 0.08))
         }
         
         return path

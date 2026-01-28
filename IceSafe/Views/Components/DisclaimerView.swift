@@ -26,9 +26,13 @@ struct DisclaimerView: View {
                     
                     // Title
                     VStack(spacing: 8) {
-                        Text("IceSafe")
+                        Text("Ice Safety")
                             .font(.system(size: 36, weight: .bold))
                             .foregroundColor(AppTheme.textPrimary)
+                        
+                        Text("for Fishermans")
+                            .font(.system(size: 20, weight: .medium))
+                            .foregroundColor(AppTheme.primary)
                         
                         Text("Ice Thickness Calculator")
                             .font(.system(size: 16))

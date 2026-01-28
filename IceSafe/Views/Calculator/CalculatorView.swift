@@ -29,6 +29,11 @@ struct CalculatorView: View {
                                 viewModel.useMetric = false
                             }
                         }
+                        .onChange(of: viewModel.useMetric) { _ in
+                            // Update text field when unit changes
+                            let displayValue = viewModel.useMetric ? viewModel.iceThickness : UnitConverter.cmToInches(viewModel.iceThickness)
+                            thicknessText = String(format: "%.1f", displayValue)
+                        }
                         
                         // Slider
                         CustomSlider(
